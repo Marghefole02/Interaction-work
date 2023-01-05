@@ -1,0 +1,229 @@
+  /*  con import da web
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap'); */
+/* con file ttf Google e Emmet VSCODE
+ @font-face {
+    font-family: 'Oswald';
+    src: url(gfonts/oswald.ttf);
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(gfonts/opensans.ttf);
+} */
+
+/* da https://google-webfonts-helper.herokuapp.com/ */
+/* oswald-regular - latin */
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    src: url('gfonts2/oswald-v49-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('gfonts2/oswald-v49-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('gfonts2/oswald-v49-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('gfonts2/oswald-v49-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('gfonts2/oswald-v49-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('gfonts2/oswald-v49-latin-regular.svg#Oswald') format('svg'); /* Legacy iOS */
+    }
+    /* RESET CSS */
+    
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        box-sizing: border-box;
+    }
+    
+    
+    body{
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        font-size: 19px;
+        color: #2d2d2d;
+        background-color: #d1d1d1;
+    }
+    h1,h2,h3,h4,h5,nav a{
+        font-family: Oswald, Helvetica, sans-serif;
+    }
+    
+    /* immagini responsive si adattano alla viewport/contenitore */
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    h3{font-size: 30px;}
+    .wide{
+        background-color: #2d2d2d;
+        color: #ffffff;
+    }
+    header{
+        padding: 30px 20px;
+    }
+    nav li{
+        display: inline-block; /* display inline ma con gestione del margin verticale */
+        margin-left: 20px;
+        list-style:none; /* toglie pallino al elemento li*/
+        text-transform: capitalize; 
+    }
+    nav a{
+        text-decoration: none;/* azzero stili di default*/
+        color: #ffffff;
+        font-size: 30px;
+    }
+    nav a:hover,
+    nav .active{
+        color: #009eee;
+    }
+    #banner{
+        width: 100%;
+        background: url(immagini/mohole.jpg) no-repeat center center ;
+        background-size: cover;
+        height: 300px;
+        /* istruzioni flexbox per scritta h3*/
+        text-shadow: 2px 2px 3px black;
+        display: flex;
+        justify-content: center; /* allineo orizzontale al centro*/
+    }
+    #banner h3{
+        font-size: 50px;
+    }
+    
+    main h3{
+        margin: 10px 0px;
+    }
+    main .colonna{
+        padding: 20px;
+        text-align: center;
+    }
+    main p{
+        text-align: left;
+        margin-top: 10px;
+    }
+    main .fas{
+        font-size: 60px;
+    }
+    footer{
+        padding:30px 20px 60px;
+        /* a tre cifre top | left+right | bottom */
+    }
+    footer .colonna{
+        padding:10px 0;
+    }
+    footer .colonna a{
+        color: #ffffff;
+        text-decoration: underline;
+    }
+    footer .colonna a:hover{
+        color: #009eee;
+    }
+    
+    /* colori brand social
+     https://brandcolors.net
+    fb #3b5998
+    tw #1da1f2
+    yt #ff0000
+    inst #f56040
+    */
+    .fa-facebook{color:#3b5998;}
+    .fa-twitter{color:#1da1f2;}
+    .fa-youtube{color: #ff0000;}
+    .fa-instagram{color: #f56040;}
+    
+    .menu_social{
+        display: flex;
+        /* flex-direction:row; è il default
+        flex-direction:column; colonne in verticale
+        */
+        padding:30px;
+        font-size: 50px;
+        justify-content: space-around;
+    }
+    
+    /* CSS PER PAGINA STAFF  */
+    
+    /* Griglia con Flexbox */
+    .flexgrid{
+        display: flex;
+        /* display: -webkit-flex;
+        display: -ms-flexbox; 
+        prefissi per vecchi browser*/
+        flex-wrap:wrap ;/* voglio che ogni box/card di Gandalf possa andare a capo se non c'è spazio*/
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .pos1{
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        overflow: hidden;
+        /* nascondi elemento se esce da contenitore*/
+    }
+    
+    .pos1 img{
+        transition:all 0.8s ease;
+    }
+    .pos1 img:hover{
+        transform: scale(1.1);
+    
+    }
+    .pos2{
+        position:absolute;
+        height: 100px;
+        bottom: -50px;
+        left: 0px;
+        background-color: rgba(0,0,0,0.5);
+        padding: 5px 10px;
+        color: gray;
+        width: 100%;
+        z-index: 2;/* ordinamento livelli, più è alto più è vicino a noi */
+        /* posizionamemnti assoluti: top bottom left right*/
+        transition: all 0.9s linear;
+    }
+
+    .pos2:hover{
+        color:white;
+        bottom: 0px;
+        
+    }
+    
+    /* FINE CSS PAGINA STAFF  */
+    
+    
+    
+    
+    
+    
+    /* MEDIA QUERY con GRID CSS per viewport più larghe (desktop) */
+    @media (min-width:768px){
+        header,
+        footer,
+        .grid_1,
+        .grid_3{
+            display:grid;   
+        }
+        header{grid-template-columns: 1fr 1fr;}
+        nav{justify-self:end;}
+        .grid_3{
+            grid-template-columns: repeat(3, 1fr);
+            /* è a stessa cosa di scrivere:
+            grid-template-columns: 1fr 1fr 1fr; */
+        }
+        /* Impostazione per pagina about monocolonna */
+        .grid_1{justify-content: center;}
+        .grid_1 article{width:60vw;}
+        .grid_1 img{width: 30vw;}
+    
+        footer{
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            /* comando align-items allinea verticalmente*/
+        }
+        footer h4{text-align: center;}
+    
+        .flexgrid img{
+            width: 300px;
+        }
+        
+        
+    } /* FINE ISTRUZIONI da 768px in su */

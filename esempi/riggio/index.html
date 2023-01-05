@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test 1</title>
+    <!-- mio files di reset e utilities CSS 
+    Repository: https://github.com/FFLAB/riggset nella cartella css
+
+    questo index usa grid e postion fixed
+    -->
+    <link rel="stylesheet" href="riggset.css" />
+    <style>
+      header,
+      img,
+      .grid_container {
+        padding: 20px;
+      }
+      header {
+        border-bottom: 2px solid black;
+      }
+
+      /* gallery immagini */
+      main.flex {
+        flex-wrap: wrap;
+      }
+      /* IN DESKTOP --------------------- */
+      @media (min-width: 800px) {
+        .grid_container {
+          grid-template-columns: 300px 1fr;
+          grid-template-rows: 400px 1fr;
+        }
+        ol {
+          position: fixed;
+        }
+      }
+
+      /* -------------------------------- */
+
+      nav li {
+        padding: 4px;
+      }
+      nav ol {
+        padding: 20px 40px;
+      }
+      .side-text {
+        position: fixed;
+        max-width: 300px;
+        top: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Interaction Design</h1>
+    </header>
+    <div class="grid_container grid">
+      <nav>
+        <ol class="bg-red">
+          <li>Prima cosa</li>
+          <li>Seconda Cosa</li>
+          <li>Altra cosa</li>
+          <li>La mia idea</li>
+          <li>Grandi Idee</li>
+        </ol>
+        <div class="side-text">
+          <p>
+            Chislic shoulder short ribs, cow buffalo tongue tenderloin kielbasa
+            alcatra jowl biltong t-bone. Pork loin landjaeger venison, brisket
+            t-bone chuck leberkas picanha filet mignon sausage tail sirloin
+            turkey shankle. Tongue cupim meatloaf picanha tri-tip capicola.
+            Shoulder chuck bresaola andouille. Spare ribs pancetta chislic
+            sirloin pork corned beef andouille biltong beef ribs alcatra fatback
+            bacon. Ground round picanha alcatra pork chop tongue ham brisket
+            filet mignon. Doner turducken chicken beef ribs biltong, pork
+            porchetta.
+          </p>
+        </div>
+      </nav>
+      <main class="flex">
+        <img src="https://placedog.net/300/300/g" alt="" />
+        <img src="https://placedog.net/300/300/g" alt="" />
+        <img src="https://placedog.net/300/300/g" alt="" />
+        <img src="https://placedog.net/300/300/g" alt="" />
+        <img src="https://placedog.net/300/300/g" alt="" />
+        <img src="https://placedog.net/300/300/g" alt="" />
+        <img src="https://placedog.net/300/300/g" alt="" />
+        <img src="https://placedog.net/300/300/g" alt="" />
+        <img src="https://placedog.net/300/300/g" alt="" />
+      </main>
+    </div>
+  </body>
+</html>
