@@ -7,6 +7,9 @@
     font-size: 100%;
     box-sizing: border-box;
 }
+.body{
+    font-family: "Roboto Mono, Helvetica, Arial";
+}
 
 img{
         display: block;
@@ -17,7 +20,7 @@ img{
 }
 
 .img1 {
-       margin: 50px 10px 10px 200px;
+       margin: 50px 10px 10px 400px;
        width: 70%;
 }
 .img2{
@@ -35,6 +38,20 @@ img{
     margin: 100px 200px 100px 200px;
 
 }
-.h1{
+.banner {
+   font-size: 13pt;
+    position: fixed;
     text-align: center;
-}
+    max-width: 300px;
+    top: 10px;
+    background-color: rgba(255, 0, 0, 0.828);
+    background-size: ;
+    border-bottom: 25px;
+  }
+  .text {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+
