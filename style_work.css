@@ -103,5 +103,24 @@ img{
     row-gap: 20px;
     column-gap: 20px;
   }
-  
+  .pattern{
+    width: 58%;
+    margin: 50px 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+  .tangram{
+    width: 54%;
+    margin: 50px 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
 
