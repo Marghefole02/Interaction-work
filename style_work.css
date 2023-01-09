@@ -19,11 +19,11 @@ img{
         padding: 5px;
 }
 .img1 {
-       margin: 70px 10px 10px 400px;
+       margin: 70px 10px 10px 350px;
        width: 70%;
 }
 .img2{
-    margin: 70px 50px 70px 600px;
+    margin: 90px 0px 70px 500px;
     width: 70%;  
 }
 
@@ -35,14 +35,13 @@ img{
 .p2{
         float: left;
         padding: 10px;
+        
 }
 .banner {
-    font-size: 13pt;
     position: fixed;
     text-align: left;
     max-width: 300px;
     top: 0px;
-    background-size: cover;
     background-color: #D64933;
     padding-left:10px ;
     padding-right: 15px;
