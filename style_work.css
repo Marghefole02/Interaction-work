@@ -8,14 +8,14 @@
     box-sizing: border-box;
 }
 
-/*@font-face {
-    font-family: ;
-    src: url();
-}*/
+@font-face {
+    font-family: "Roboto_Mono";
+    src: url(Roboto_Mono/static/RobotoMono-Regular.ttf);
+}
 
 /*@media*/
 body{
-    font-family: "Roboto Mono, Helvetica, Arial";
+    font-family: "Roboto_Mono, Helvetica, Arial";
 }
 
 img{
@@ -47,11 +47,13 @@ img{
 
 }
 
-.p2{
+.problemi{
     text-align: center;
     font-size: large;
-    margin-left: 350px;
+    padding: 20px ;
+   
 }
+
 
 .banner {
     position: fixed;
@@ -62,6 +64,8 @@ img{
     padding-left:10px ;
     padding-right: 15px;
     border-bottom: 25px;
+    
+   
   }
  
   a {
@@ -70,7 +74,9 @@ img{
   }
   h1,h2{
     text-align: center;
+    font-size: 20px;
   }
+
   .flexgrid{
     width: 70%;
     margin: 70px 350px;
