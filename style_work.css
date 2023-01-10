@@ -42,10 +42,13 @@ img{
 
 .p{
         float: right;
-        padding-right: 5px;
+       
         text-align: left;
+        display: grid;
+        grid-template-columns: 60%;
 
 }
+
 
 .problemi{
     text-align: center;
