@@ -42,6 +42,16 @@ img{
     width: 100%;
 }
 
+.img4{
+  margin: 100px 400px ;
+  width: 55%;
+}
+.img5{
+  margin: 100px 500px ;
+  width: 30% ;
+
+}
+
 .p{
         float: right;
        padding: 10px;
