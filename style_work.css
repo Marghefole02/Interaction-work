@@ -33,7 +33,7 @@ img{
        width: 50%;
 }
 .img2{
-    margin: 100px 500px;
+    margin: 50px 500px;
     padding: 100px;
     width: 67%;  
 }
@@ -47,30 +47,38 @@ img{
   width: 55%;
 }
 .img5{
-  margin: 100px 1100px ;
-  width: 15% ;
+  margin: 100px 700px ;
+  width: 20% ;
 
 }
 .img6{
-  margin: 100px 720px;
-  width: 50%;
+  margin: 200px 720px;
+  width: 51%;
+}
+.img7{
+  margin: 100px 500px;
+  width: 60%;
+
+}
+.img8{
+  margin: 100px 400px;
+  width: 71%;
 }
 
 .p{
-        float: right;
-       padding: 10px;
-        text-align: left;
+float: right;
+padding: 10px;
+text-align: left;
+line-height: 20px;
         
-       
-
 }
 
 
 .problemi{
     text-align: center;
     font-size: large;
-    padding: 20px ;
-   
+    padding: 20px 250px 20px 500px;
+   line-height: 40px;
 }
 
 
