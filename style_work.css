@@ -10,9 +10,9 @@
 
 @font-face {
     font-family: "RobotoMono-Regular";
-    src: url(Roboto_Mono/static/RobotoMono-Regular.ttf);
+    src: url(robotomono/RobotoMono-Regular.ttf);
     font-family: "RobotoMono-Bold";
-    src: url(Roboto_Mono/static/RobotoMono-Bold.ttf)
+    src: url(robotomono/RobotoMono-Bold.ttf)
 }
 
 /*@media*/
@@ -47,9 +47,13 @@ img{
   width: 55%;
 }
 .img5{
-  margin: 100px 500px ;
-  width: 30% ;
+  margin: 100px 1100px ;
+  width: 15% ;
 
+}
+.img6{
+  margin: 100px 720px;
+  width: 50%;
 }
 
 .p{
