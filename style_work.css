@@ -9,13 +9,15 @@
 }
 
 @font-face {
-    font-family: "Roboto_Mono";
+    font-family: "RobotoMono-Regular";
     src: url(Roboto_Mono/static/RobotoMono-Regular.ttf);
+    font-family: "RobotoMono-Bold";
+    src: url(Roboto_Mono/static/RobotoMono-Bold.ttf)
 }
 
 /*@media*/
 body{
-    font-family: "Roboto_Mono, Helvetica, Arial";
+    font-family: "RobotoMono-Regular, Helvetica, Arial";
 }
 
 img{
@@ -24,14 +26,14 @@ img{
         border: 0.5px solid black;
         border-radius: 4px;
         
+        
 }
 .img1{
-       margin: 70px 500px;
-       width: 70%;
-       margin-right: 400px;
+       margin: 100px 400px ;
+       width: 50%;
 }
 .img2{
-    margin: 100px  500px;
+    margin: 100px 500px;
     padding: 100px;
     width: 70%;  
 }
@@ -42,10 +44,10 @@ img{
 
 .p{
         float: right;
-       
+       padding: 10px;
         text-align: left;
-        display: grid;
-        grid-template-columns: 60%;
+        
+       
 
 }
 
@@ -78,6 +80,11 @@ img{
   h1,h2{
     text-align: center;
     font-size: 20px;
+
+  }
+  h3{
+    text-align: left;
+    font-size: 15px;
   }
 
   .flexgrid{
