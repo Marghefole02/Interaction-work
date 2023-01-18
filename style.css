@@ -15,19 +15,9 @@
     src: url(robotomono/RobotoMono-Bold.ttf)
 }
 
-@media (min-width: 844px) {
-  .banner{ position: fixed;
-    text-align: left;
-    top: 0px;
-    background-color: #D64933;
-    padding-left:10px ;
-    padding-right: 15px;
-    border-bottom: 25px;
-  }
-  img {
-    width: 100px;
-    
-  }
+@media (min-width:800px) {
+  
+ 
   }
 
 body{
